@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+	<style>
+	h1 {text-align: center;}
+	</style>
+</head>
+<body>
+<div class="container">
+    <div class="form-group">
+		<br>
+        <h1>Dennis</h1>
+		<div class="row">
+			<div class="col">
+			<button style="position:centered;"id="dennisTake" class="btn btn-success btn-lg btn-block">Neem pils (1)</button>
+			</div>
+			<div class="col">
+			<button style="position:centered;"id="dennisGive" class="btn btn-danger btn-lg btn-block">Vul pils (-24)</button>
+			</div>
+		</div>
+		<div class="container" style="background-color:lightblue;font-size: 20px;text-align: center;" id="dennisField"></div>
+		<h1>Duc-Tuan</h1>
+		<div class="row">
+			<div class="col">
+			<button style="position:centered;"id="ducTake" class="btn btn-success btn-lg btn-block">Neem pils (1)</button>
+			</div>
+			<div class="col">
+			<button style="position:centered;"id="ducGive" class="btn btn-danger btn-lg btn-block">Vul pils (-24)</button>
+			</div>
+		</div>
+		<div class="container" style="background-color:lightblue;font-size: 20px;text-align: center;" id="ducField"></div>
+		<h1>Robin</h1>
+		<div class="row">
+			<div class="col">
+			<button style="position:centered;"id="robinTake" class="btn btn-success btn-lg btn-block">Neem pils (1)</button>
+			</div>
+			<div class="col">
+			<button style="position:centered;"id="robinGive" class="btn btn-danger btn-lg btn-block">Vul pils (-24)</button>
+			</div>
+		</div>
+		<div class="container" style="background-color:lightblue;font-size: 20px;text-align: center;" id="robinField"></div>
+		<h1>Gast</h1>
+		<div class="row">
+			<div class="col">
+			<button style="position:centered;"id="gastTake" class="btn btn-success btn-lg btn-block">Neem pils (1)</button>
+			</div>
+			<div class="col">
+			<button style="position:centered;"id="gastGive" class="btn btn-danger btn-lg btn-block">Vul pils (-24)</button>
+			</div>
+		</div>
+		<div class="container" style="background-color:lightblue;font-size: 20px;text-align: center;" id="gastField"></div>
+    </div>
+</div>
+</body>
+</html>
+
+<script src="database.js"></script>
+
